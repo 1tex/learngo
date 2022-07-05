@@ -9,7 +9,6 @@ func worker(id int, c chan int) {
 	for n := range c {
 		fmt.Printf("Worker %d recevied %d\n", id, n)
 	}
-
 }
 
 func createWorker(id int) chan<- int {
